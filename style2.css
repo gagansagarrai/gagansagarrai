@@ -1,0 +1,226 @@
+*{
+    margin:0; /*thi is of the full screen in webpage*/
+    padding:0 0;
+}
+
+
+.header{ /*this is for the background image and its managing code*/
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("gallery/background2");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{ /*this is for the inside of nav class*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+    
+
+nav img{ /*this is of logo image*/
+    width: 150px;
+}
+
+.link{ /*this is of the home,contact, etc. position*/
+    flex: 1;
+    text-align: right;
+}
+
+.link ul li{ /*this is of home,contact etc design*/
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+}
+
+.link ul li a{ /*this is the color and size of menu*/
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.link ul li::after{ /*this is of the red underline after putting cursor to the home,contact etc.*/
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.link ul li:hover::after{ /*hover mean the pointing time, and this is of red underline lenght*/
+    width: 100%;
+}
+
+.textbox{ /*this is of the main sentence in the middle, 'before.....'*/
+    width: 100%;
+    color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+.textbox h1{ /*this is of the main sentence font sixe*/
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.textbox p{ /*this of the main sentence font size*/
+    font-weight: 900;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+nav .fa{ /*this is to hide the icon on both big and small screen*/
+    display: none;
+}
+
+@media(max-width: 700px){ /*this is for the mobile screen disply*/
+    .textbox h1{
+        font-size: 35px;
+    }
+
+    .textbox audio{
+        top: auto;
+    }
+
+    .textbox p{
+        font-size: 25px;
+    }
+
+    .link ul li{
+        display: block;
+    }
+    
+
+    .link ul{ /*this is for making the home, contact etc in the middle of side bar*/
+        margin: 15%;
+    }
+
+
+
+
+     .link{ /*this is for the side bar editing*/
+        background: black;
+        position: fixed;
+        right: -200;
+        top: 0;
+        height: 100vh;
+        width: 150px;
+        text-align: left;
+        transition: 1s;
+        z-index: 2;
+
+     }
+
+     nav .fa{ /*this is for the showing icon in the side bar*/
+        display: block;
+        font-size: 17px;
+        cursor: pointer;
+        color: orangered;
+        margin: 10px;
+    
+     }
+}
+
+
+.feat{ /*this is for the editing of the 3 partation of text 'BHAKTAPUR'*/
+    text-align: center;
+    margin-top: 3%;
+    font-size: 30px;
+}
+
+p{ /*this is for the paragrapy written after BHAKTAPUR*/
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+.row{ /*this is for making 3 partation in different parts*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.col{ /*this is for the editing of 3 partation like adding box, color etc*/
+    flex-basis: 31%;
+    text-align: center;
+    margin: 5%;
+    background-color: lightgrey;
+    padding: 2%;
+    border-radius: 100px;
+
+}
+
+.col:hover{ /*this is of the pointing editing by placing cursor in the 3part*/
+    background-color: red;
+    color: white;
+    box-shadow: 15px 15px 10px gray;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+@media(max-width: 700px){ /*this is for the editing the 3part for the mobile device*/
+
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+.footer{ /*this is for the social media icon  designing*/
+    text-align: center;
+    padding-top: 7px;
+    background: rgba( 16, 1, 1, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+.footer i{
+    font-size: 15px;
+    cursor: pointer;
+}
+    
+
+.lastline{ /*this is for making the 'copyright' to the left*/
+    display: flex;
+    width: 90%;
+    font-size: 15px;
+    margin: auto;
+    padding-bottom: 7px;
+}
+
+.pages{
+    flex: 1;
+    display: inline-block;
+    text-align: right;
+
+}
