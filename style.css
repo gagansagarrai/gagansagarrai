@@ -239,6 +239,7 @@ p{
     min-height: 30vh;
     background-image: url("image/himalayan.jpg");
     margin: auto;
+    margin-top: 10%;
     margin-bottom: 10%;
     background-position: center;
     background-size: cover;
