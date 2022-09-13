@@ -4,10 +4,15 @@
 }
 
 
+body{
+    background-color: black;
+}
+
+
 .header{ /*this is for the background image and its managing code*/
     width: 100%;
     min-height: 100vh;
-    background-image: url("gallery/background2");
+    background-image: url("gallery/background2.png");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -38,7 +43,7 @@ nav img{ /*this is of logo image*/
 }
 
 .link ul li a{ /*this is the color and size of menu*/
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
@@ -60,7 +65,7 @@ nav img{ /*this is of logo image*/
 
 .textbox{ /*this is of the main sentence in the middle, 'before.....'*/
     width: 100%;
-    color: blue;
+    color: white;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -71,13 +76,10 @@ nav img{ /*this is of logo image*/
 
 .textbox h1{ /*this is of the main sentence font sixe*/
     font-weight: 900;
-    font-size: 30px;
+    font-size: 40px;
 }
 
-.textbox p{ /*this of the main sentence font size*/
-    font-weight: 900;
-    font-size: 30px;
-}
+
 
 
 
@@ -96,10 +98,6 @@ nav .fa{ /*this is to hide the icon on both big and small screen*/
 @media(max-width: 700px){ /*this is for the mobile screen disply*/
     .textbox h1{
         font-size: 35px;
-    }
-
-    .textbox audio{
-        top: auto;
     }
 
     .textbox p{
@@ -149,9 +147,15 @@ nav .fa{ /*this is to hide the icon on both big and small screen*/
 }
 
 p{ /*this is for the paragrapy written after BHAKTAPUR*/
+    color: white;
     text-align: center;
     font-size: 20px;
 }
+
+h2{ /*this is for the coloring the 'remember'*/
+    color: white;
+}
+
 
 
 
@@ -165,7 +169,7 @@ p{ /*this is for the paragrapy written after BHAKTAPUR*/
     flex-basis: 31%;
     text-align: center;
     margin: 5%;
-    background-color: lightgrey;
+    background-color: black;
     padding: 2%;
     border-radius: 100px;
 
@@ -196,7 +200,7 @@ p{ /*this is for the paragrapy written after BHAKTAPUR*/
     text-align: center;
     padding-top: 7px;
     background: rgba( 16, 1, 1, 0.3 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+box-shadow: 0 8px 32px 0 rgb(0, 17, 255);
 backdrop-filter: blur( 5.5px );
 -webkit-backdrop-filter: blur( 5.5px );
 border-radius: 10px;
@@ -208,9 +212,14 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     font-size: 15px;
     cursor: pointer;
 }
+
+h3{
+    color: white;
+}
     
 
 .lastline{ /*this is for making the 'copyright' to the left*/
+    color: white;
     display: flex;
     width: 90%;
     font-size: 15px;
