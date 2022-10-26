@@ -6,8 +6,8 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
         </head>
         <body>
-            <!--hrader start-->
-            <section class="header">
+            <!--hrader start-->">
+            <section>
                
                 <nav>
                     <a href="index.html"><img src = "image/logo.png" title="Gagan Sagar Rai"></a>
@@ -30,14 +30,73 @@
                     
                 </nav>
 
-                <div class="textbox">
-                <h1>Before scrolling down, lets be proud towards our National Anthem. Thanks!</h1><br><br><br><br>
-                <p>Welcome to my gallery. Here i have added 3 photos down below. You can check it out!</p>
-
-             </div>
+               
 
 
 
+            </section>
+
+
+
+            <section class="contact">
+                <div class="content">
+                 <marquee><h2>If you have any query or wanted to contact us, than feel free to communicate with us.</h2></marquee><BR><BR>
+                    <h1>NOTE!!. CLICK ON THE ->CONTACT US<- TO OPEN A MESSAGE BOX.</h1>
+                </div>
+                <div class="container">
+                    <div class="contactInfo">
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-solid fa-map-pin"></i></div>
+                                <div class="text">
+                                    <h3>Address</h3>
+                                    <p><b><i>NEPAL<br>Bhaktapur</i></b></p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="icon"><i class="fa fa-solid fa-phone"></i></div>
+                                    <div class="text">
+                                        <h3>Phone</h3>
+                                        <p>+97798********</p>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="icon"><i class="fa fa-solid fa-envelope"></i></div>
+                                        <div class="text">
+                                            <h3>Email</h3>
+                                            <p>gagansagarrai@gmail.com</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                                             
+                                
+                                <div class="aboutus">
+                                    <a class="form-button" onclick="showform()">CONTACT US!</a>
+                                 <div class="contactForm" id="formbox">
+                                    <form action="https://formsubmit.co/gagansagarrai@gmail.com" method="POST">
+                                        <i class="fa fa-solid fa-circle-xmark" onclick="hideform()"></i>
+                                        <h2>Send Message</h2>
+                                        <div class="inputBox">
+                                            <input type="text" name="" required="required">
+                                            <span>Fulll Name</span>
+                                        </div>
+                                        <div class="inputBox">
+                                            <input type="text" name="" required="required">
+                                            <span>Email</span>
+                                        </div>
+                                        <div class="inputBox">
+                                            <textarea required="required"></textarea>
+                                            <span>What is your query sir/mam...?</span>
+                                        </div>
+                                        <div class="inputBox">
+                                            <button type="submit" id="button" name="email" >SEND</button>
+                                    </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
 
@@ -78,7 +137,20 @@
         
                 }
 
-            </script>
+     
+
+    var formbox=document.getElementById("formbox");
+    function hideform()
+    {
+        formbox.style.display="none"
+    }
+    function showform()
+    {
+        formbox.style.display="block"
+
+    }
+
+</script>
         
 
 
