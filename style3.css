@@ -210,7 +210,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 @media(max-width: 700px){
     .contact{
-        min-height: 100vh;
+        min-height: 71vh;
         padding: 0px 50px;
     }
 
@@ -237,11 +237,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         border: 2px solid red;
         rotate: 0deg;
-        top: -35;
+        top: 50;
+        left: 12.5vh;
         display: inline-block;
         text-decoration: none;
         color: blue;
-        padding: 10px 15px;
+        padding: 10px 55px;
         font-size: 15px;
         background: transparent;
         position: relative;
