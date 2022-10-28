@@ -221,7 +221,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         margin-bottom: 40px;
     }
     .contactForm{
-        top: -10vh;
+        top: -1vh;
         width: 85%;
         padding: 20px;
         bottom: 5vh;
@@ -237,7 +237,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         border: 2px solid red;
         rotate: 0deg;
-        top: 1vh;
+        top: 6.5vh; 
+        left: 16vh;
         display: inline-block;
         text-decoration: none;
         color: blue;
