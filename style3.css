@@ -208,7 +208,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
-@media(max-width: 750px){
+@media(max-width: 700px){
     .contact{
         min-height: 10vh;
         padding: 0px 50px;
